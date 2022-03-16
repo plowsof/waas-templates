@@ -15,4 +15,6 @@ cd waas-templates/Rucknium-static
 cp -r . /var/lib/docker/volumes/home_waas-static/_data
 ```
 You will need to refresh your donate page with ```ctrl+f5```.     
-If you are still not seeing changes, then check your DNS' cache settings (purge them).
+If you are still not seeing changes, then check your DNS' cache settings (purge them).    
+
+Note that some changes may take 5 minutes to appear ( this is how often the static page is refreshed ) but others should be instant.
