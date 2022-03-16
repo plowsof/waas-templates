@@ -11,15 +11,16 @@ git clone https://github.com/plowsof/waas-templates
 ```
 cd waas-templates/Rucknium-static
 ```
+(replace <CHANGE_ME> with the correct folder name)
 ```
-cp -r . /var/lib/docker/volumes/home_waas-static/_data
+cp -r . /var/lib/docker/volumes/<CHANGE_ME>-static/_data
 ```
 You will need to refresh your donate page with ```ctrl+f5```.     
 If you are still not seeing changes, then check your DNS' cache settings (purge them).    
 
 Note that some changes may take 5 minutes to appear ( this is how often the static page is refreshed ) but others should be instant.
 
-example 1 liner after your cloned repo is set up (please change the directory names accordingly)
+example 1 liner after your cloned repo is set up (please change the directory names ```<CHANGE_ME>_waas-static``` accordingly)
 ```
 cd /home/waas-templates & \
 git pull & \
