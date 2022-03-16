@@ -86,7 +86,7 @@ function setHooks(id,string){
 
     slider.oninput = function() {
 
-    output.value=this.value; 
+    output.innerHTML=this.value; 
     }
 
     displayAnon();
