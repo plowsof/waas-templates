@@ -18,3 +18,11 @@ You will need to refresh your donate page with ```ctrl+f5```.
 If you are still not seeing changes, then check your DNS' cache settings (purge them).    
 
 Note that some changes may take 5 minutes to appear ( this is how often the static page is refreshed ) but others should be instant.
+
+example 1 liner after your cloned repo is set up (please change the directory names accordingly)
+```
+cd /home/waas-templates & \
+git pull & \
+cd Rucknium-static & \
+cp -r . /var/lib/docker/volumes/home_waas-static/_data
+```
