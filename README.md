@@ -24,5 +24,5 @@ example 1 liner after your cloned repo is set up (please change the directory na
 cd /home/waas-templates & \
 git pull & \
 cd Rucknium-static & \
-cp -r . /var/lib/docker/volumes/home_waas-static/_data
+cp -r . /var/lib/docker/volumes/home_waas-static/_data \
 ```
