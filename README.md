@@ -6,7 +6,7 @@ We do not need to be inside the docker container for these changes.
 
 In your ```/home``` directory clone this git repo (install if not already with ```sudo apt-get install git```):
 ```
-git clone <url>
+git clone https://github.com/plowsof/waas-templates
 ```
 ```
 cd waas-templates/Rucknium-static
