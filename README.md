@@ -9,7 +9,7 @@ In your ```/home``` directory clone this git repo (install if not already with `
 git clone <url>
 ```
 ```
-cd waas-templates
+cd waas-templates/Rucknium-static
 ```
 ```
 cp -r . /var/lib/docker/volumes/home_waas-static/_data
