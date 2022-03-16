@@ -1,21 +1,18 @@
 .btc_address, div .anon_address_btc{
   color: #f2a900 ;
   font-family: monospace ;
-  cursor: pointer ;
   word-wrap:break-word;
 }
 
 .xmr_address, div .anon_address_xmr{
   color: #ff6600 ;
   font-family: monospace ;
-  cursor: pointer ;
   word-wrap:break-word;
 }
 
 .bch_address, div .anon_address_bch{
   color: #0AC18E ;
   font-family: monospace ;
-  cursor: pointer ;
   word-wrap:break-word;
 }
 
