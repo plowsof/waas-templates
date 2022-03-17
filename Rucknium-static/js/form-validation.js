@@ -19,8 +19,8 @@ async function form_validate() {
       $("#pay_uri").html("")
       var id = $(".coins").children(":selected").attr("id").split("_")[1]
       form_data = $(form).serialize()
-      var usd_amount = $("#demo").text()
-      form_data = "amount=${usd_amount}&" + form_data + "&uid=" + id
+      var usd_amount = document.getElementById("myRange").value
+      form_data = `amount=${usd_amount}&` + form_data + "&uid=" + id
       //we can send a uid - to link the payment to a specific wish e.g. + "&uid=${id}"
                    $.ajax({
           url: form.action,
