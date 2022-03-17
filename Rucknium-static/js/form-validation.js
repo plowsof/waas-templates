@@ -78,4 +78,3 @@ async function form_validate() {
     } 
   });
 };
-
