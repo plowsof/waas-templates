@@ -22,8 +22,8 @@ Note that some changes may take 5 minutes to appear ( this is how often the stat
 
 example 1 liner after your cloned repo is set up (please change the directory names ```<CHANGE_ME>_waas-static``` accordingly)
 ```
-cd /home/waas-templates & \
-git pull & \
-cd Rucknium-static & \
+cd /home/waas-templates && \
+git pull && \
+cd Rucknium-static && \
 cp -r . /var/lib/docker/volumes/home_waas-static/_data 
 ```
