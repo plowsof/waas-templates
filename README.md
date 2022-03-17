@@ -4,7 +4,7 @@ the ```home_waas-static``` foldername will be different on your machine 'home' i
 
 We do not need to be inside the docker container for these changes.    
 
-In your ```/home``` directory clone this git repo (install if not already with ```sudo apt-get install git```):
+In your ```/home``` directory (or whereever you feel like) clone this git repo (install if not already with ```sudo apt-get install git```):
 ```
 git clone https://github.com/plowsof/waas-templates
 ```
