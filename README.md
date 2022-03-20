@@ -4,7 +4,7 @@ the ```home_waas-static``` foldername will be different on your machine 'home' i
 
 We do not need to be inside the docker container for these changes.    
 
-In your ```/home``` directory clone this git repo (install if not already with ```sudo apt-get install git```):
+In your ```/home``` directory (or whereever you feel like) clone this git repo (install if not already with ```sudo apt-get install git```):
 ```
 git clone https://github.com/plowsof/waas-templates
 ```
@@ -22,8 +22,9 @@ Note that some changes may take 5 minutes to appear ( this is how often the stat
 
 example 1 liner after your cloned repo is set up (please change the directory names ```<CHANGE_ME>_waas-static``` accordingly)
 ```
-cd /home/waas-templates & \
-git pull & \
-cd Rucknium-static & \
-cp -r . /var/lib/docker/volumes/home_waas-static/_data \
+cd /home/waas-templates && \
+git pull && \
+cd Rucknium-static && \
+cp -r . /var/lib/docker/volumes/home_waas-static/_data && \
+cd ../..
 ```
