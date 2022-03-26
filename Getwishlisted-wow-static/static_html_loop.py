@@ -75,6 +75,7 @@ def main(config):
     count = len(wishlist["comments"]["comments"])
     pages = ceil( count / comments_per_page)
     intro = config["wishlist"]["intro"]
+    title = config["wishlist"]["title"]
     #print(f"the pages = {pages} count = {count}")
     with open(funding_template, 'r') as f:
         for line in f:
@@ -97,6 +98,8 @@ def main(config):
                     line=line.replace("{@_RSS_@}","")
             elif "{@_INTRO_@}" in line:
                 line = line.replace("{@_INTRO_@}",intro)
+            elif "{@_TITLE_@}" in line:
+                line = line.replace("{@_TITLE_@}",title)
 
             replacement += line
     lock = funding_template + ".lock"
@@ -221,7 +224,7 @@ def wish_html(one,two,three,four,five,end,total,wish):
                             </p>
                             <p>
                                 <span class="njs_ticker">{img_wow} WOWnero <a href="{wish["qr_img_url_wow"]}">[QRcode]</a></span></br>
-                                <span class="btc_address">wownero:{wish["wow_address"]}</span>
+                                <span class="wow_address">wownero:{wish["wow_address"]}</span>
                             </p>
                         </span>
                           </div>
